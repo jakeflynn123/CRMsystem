@@ -1,0 +1,254 @@
+/* VARIABLES */
+$main-font: 'calluna', serif;
+$brandcolour: rgba(170, 133, 87, 0.98);
+$secondarycolour: #474e56;
+$secondaryfont: 'bebas-neue', sans-serif;
+
+//outright the bootstrap navbar colour and font
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .dropdown > .dropdown-menu>li>a {
+  color: $secondarycolour;
+  font: {
+    weight: bolder;
+    family: $secondaryfont;
+  }
+  text-transform: uppercase;
+}
+
+//outright the bootstrap primary button styling and change the colour and font
+.btn.btn-primary {
+   background: {
+     color: transparent;
+   }
+   border: {
+     color: $secondarycolour;
+   }
+   color: $secondarycolour;
+   font: {
+     family: $main-font;
+     size: 18px;
+   }
+  margin: {
+    bottom: 10px;
+  }
+ }
+
+//change how the tables look by changing the font in the tables
+.table.table-stiped {
+  font: {
+    family: $main-font;
+    size: 15px;
+    weight: bold;
+  }
+}
+
+//changing the h1 tag to the company font and colour
+.container > h1 {
+  font: {
+    family: $secondaryfont;
+    weight: bolder;
+  }
+  text-transform: uppercase;
+  color: $secondarycolour;
+}
+//creating a hover colour for the links and buttons
+td > a:hover, .btn.btn-primary:hover, .panel-body>a:hover {
+  background: {
+    color: $secondarycolour;
+  }
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+//changing the background colour for the table panel on all tables
+th, .panel.panel-default>.panel-heading {
+  background: {
+    color: $secondarycolour;
+  }
+  color: white;
+  font: {
+    family: $secondaryfont;
+    weight: bolder;
+  }
+  text-transform: uppercase;
+}
+//making the table border black and thicker
+table {
+  border: 3px solid black;
+}
+
+//changing the colour of the links in the tables
+td > a, .panel-body>a {
+  border: 1px solid black;
+  color: $secondarycolour;
+  padding: 5px;
+  border: {
+    radius: 4px;
+  }
+  margin: {
+    top: 15px;
+  }
+}
+
+//creating a background colour on every odd row in the tablee
+.container >table > tbody >tr:hover, .container > table > tbody > tr:nth-child(odd):hover {
+  background: {
+    color: rgba(200, 158, 103, 0.72);
+  }
+}
+//changing every row to white
+.container > table > tbody > tr:nth-child(odd) {
+  background: {
+    color: white;
+  }
+}
+//adding padding to the tables
+.container > .table>tbody>tr>td, .container > table > tbody > tr:nth-child(odd) {
+  padding: 15px;
+}
+//setting the default font and colour to the html and body tags
+html body {
+  font: {
+    family: $main-font;
+  }
+  color: $secondarycolour;
+  font: {
+    weight: bold;
+  }
+  font: {
+    size: 15px;
+  }
+}
+
+//changing the colour of the text in the navbar on hover
+.navbar-default .container-fluid .navbar-nav > li > a:hover {
+  color: black;
+}
+
+//changing the colour of the hamburger menu
+.container>.row>.col-md-4.col-xs-12>a, .panel.panel-default > ul > li > a, .navbar-collapse > .navbar-nav > li > a, .navbar-default .container-fluid .navbar-nav > li > a, .navbar-default .container-fluid .navbar-brand {
+  color: $secondarycolour;
+}
+
+//inherit the background colour from the rest of the navbar
+.navbar-default .container-fluid .navbar-nav .active > a {
+  background: {
+    color: inherit;
+  }
+}
+//inherit the background colour from the rest of the navbar
+.navbar-default .container-fluid .navbar-nav .active > a:hover {
+  background-color: inherit;
+  color: black;
+}
+//changing parts of the navbar to the brandcolour
+nav.navbar.navbar-default > .container-fluid, .navbar-default .container-fluid .navbar-nav>.open>a, .navbar-default .container-fluid .navbar-nav>.open>a:hover, .navbar-default .container-fluid .navbar-nav>.open>a:focus,
+.navbar-default .container-fluid .navbar-nav >.open > .dropdown-menu, .navbar-default .container-fluid .navbar-nav>.open > .dropdown-menu > li > a:hover, .navbar-default .container-fluid .navbar-nav>.open> .dropdown-menu > li > a:focus {
+  background: {
+    color: $brandcolour;
+  }
+}
+
+//changing the colour of he border of the hamburger menu
+.navbar-default > .container-fluid > .navbar-header > .navbar-toggle {
+  border: {
+    color: $secondarycolour;
+  }
+}
+//changing the colour of the lines in the hamburger menu
+.navbar-default > .container-fluid > .navbar-header > .navbar-toggle > .icon-bar {
+  background: {
+    color: $secondarycolour;
+  }
+}
+
+//changing the background colour of the hamburger menu when it is active and hovered over
+.navbar-default > .container-fluid > .navbar-header > .navbar-toggle:hover, .navbar-default > .container-fluid > .navbar-header > .navbar-toggle:active {
+  background: {
+    color: $secondarycolour;
+  }
+}
+//changing the three lines to the brandcolour when the menu is hovered over
+.navbar-default > .container-fluid > .navbar-header > .navbar-toggle:hover > .icon-bar {
+  background: {
+    color: $brandcolour;
+  }
+}
+//get rid of the border when the menu is clicked
+.container-fluid > .navbar-collapse, .navbar-default .container-fluid .navbar-nav >.open > .dropdown-menu > .divider {
+  border: {
+    top: none;
+  }
+}
+//inherit the background colour from the rest of the navbar
+.container-fluid > .navbar-header > .navbar-toggle:focus, .dropdown > .dropdown-menu > .divider{
+  background: {
+    color: inherit;
+  }
+}
+
+//change the colour and the font of the links in the hamburger menu
+.dropdown > .dropdown-menu > li > a {
+  font: {
+    family: $secondaryfont;
+  }
+  color: $secondarycolour;
+}
+
+//set every column to width 100%
+.container > .row > [class*="col-md-"], [class*="col-xs-"], [class*="col-sm-"], [class*="col-lg-"]{
+  width: 100%;
+}
+
+//centre the text in the tables
+.panel-body > p, .list-group-item {
+  text-align: center;
+}
+
+//change the links in the tables
+.col-md-4.col-xs-12 > a {
+  position: absolute;
+  margin: {
+    top: 100px;
+  }
+  border: 1px solid black;
+  color: $secondarycolour;
+  padding: 5px;
+  border: {
+    radius: 4px;
+  }
+}
+
+//change the links in the tables when hovered over
+.container > [class*="col-md-"] [class*="col-xs-"] > a:hover {
+  background: {
+    color: $secondarycolour;
+  }
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+//hide columns when below 845 pixels
+@media screen and (max-width: 845px) {
+  th:nth-child(4) {
+    display: none;
+  }
+  td:nth-child(4) {
+    display: none;
+  }
+}
+
+//hide more columns when below 700px pixels
+@media screen and (max-width: 700px) {
+  th:nth-child(3) {
+    display: none;
+  }
+  td:nth-child(3) {
+    display: none;
+  }
+}
+
+//make the tables usable when on mobile
+.container {
+  overflow-x:auto;
+}
